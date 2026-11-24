@@ -14,9 +14,6 @@ export default function Result({ maxQuizLen, correctNumLen }) {
             <Confetti
                 width={window.innerWidth}
                 height={window.innerHeight}
-                gravity={10}
-                friction={0.1}
-                tweenDuration={2000}
             />
         </>
     )

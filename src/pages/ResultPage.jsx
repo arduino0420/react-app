@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom"
 import { ROUTES } from "../const";
 import Result from "../compornents/Result/Result";
 import Loading from "../compornents/Loading/Loading";
+import { useState, useEffect } from "react";
 
 export default function ResultPage() {
   const [active, setActive] = useState(false);

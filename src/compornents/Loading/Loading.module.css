@@ -1,4 +1,14 @@
-.loading{
+@keyframes gakuburu {
+    50% {
+        transform: translateX(3px);
+    }
+
+    100% {
+        transform: translateX(-3px);
+    }
+}
+
+.loading {
     position: fixed;
     z-index: 999;
     left: 0;
@@ -8,10 +18,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-style: 50px;
+    background-color: #fff;
+    color: #000;
+    font-size: 50px;
     transition: ease-in-out 0.5s;
-    
-    &.isActive{
+
+    >span {
+        animation: gakuburu 0.1s infinite
+    }
+
+    &.isActive {
         transform: translateY(-100%);
     }
 }

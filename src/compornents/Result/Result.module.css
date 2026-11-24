@@ -1,10 +1,10 @@
-.result{
+.result {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 
-    .resultHighlight{
+    .resultHighlight {
         font-weight: bold;
         font-style: 30px;
     }
